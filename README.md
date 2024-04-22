@@ -11,3 +11,5 @@ And enjoy generating for free easy to remember uncrackable password.
 Note: The script works in itself as well to generate password if you dont want to host.
 
 python3 pwgen.py
+
+![Uploading image.png…]()
