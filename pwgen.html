@@ -1,0 +1,17 @@
+<html>
+<head> 
+	<title> JUNIPER PASSWORD GENERATOR</title>
+</head>
+<body>
+	<h1> PASSWORD GENERATOR </h1>
+	<form action = "/cgi-bin/pwgen.py" method = "post" target="password_output">
+		<input type = "submit" value = "Generate Password">
+	</form>
+	<div id="PASSWORD">
+        <!-- Python script result will be displayed here -->
+    </div>
+    <iframe name="password_output" style="display: none;"></iframe>
+</body>
+</html>
+
+
