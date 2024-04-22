@@ -76,6 +76,7 @@ def pwd_gen(words):
     		print("</html>")
     return None
 
+#made with love by iAMShell
 
 if __name__== "__main__":
     main()
