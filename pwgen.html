@@ -1,17 +1,30 @@
+<!DOCTYPE html>
 <html>
-<head> 
-	<title> JUNIPER PASSWORD GENERATOR</title>
+<head>
+    <title>Password Generator</title>
 </head>
-<body>
-	<h1> PASSWORD GENERATOR </h1>
-	<form action = "/cgi-bin/pwgen.py" method = "post" target="password_output">
-		<input type = "submit" value = "Generate Password">
-	</form>
-	<div id="PASSWORD">
-        <!-- Python script result will be displayed here -->
-    </div>
-    <iframe name="password_output" style="display: none;"></iframe>
+<body style="background-image:url('your backgound image file name');">
+<center>
+    <h1>PASSWORD GENERATION TOOL</h1>
+    <button onclick="runPythonScript()">Generate</button>
+    <div id="output"></div>
+    <script>
+        function runPythonScript() {
+            fetch('/cgi-bin/pwgen.py', {
+                method: 'POST'
+            })
+            .then(response => response.text())
+            .then(data => {
+                const outputDiv = document.getElementById('output');
+                outputDiv.innerHTML = `${data}`;
+                outputDiv.style.color = "green";
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+    </script>
+</center>
 </body>
 </html>
-
 
