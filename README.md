@@ -1,5 +1,5 @@
 # PasswordGenerator
-Web Based App in Python to generate random uncrackable Password for Free.
+Python script to generate random uncrackable Password for Free.
 
 Modification can be done accordingly to both html and python script as per requirement.
 
