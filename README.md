@@ -12,4 +12,5 @@ Note: The script works in itself as well to generate password if you dont want t
 
 python3 pwgen.py
 
-![Uploading image.png…]()
+![image](https://github.com/workabhiwin09/PasswordGenerator/assets/31949319/e23199a0-6cfa-4c24-a550-e1498913c6f6)
+
